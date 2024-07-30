@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Especial</title>
+    <style>
+        body {
+            background-color: #800080;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .message-box {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            max-width: 80%;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <p>Eres una persona muy linda que siempre supera todo, ¡te admiro mucho!</p>
+        <button onclick="goToFinalMessage()">Continuar</button>
+        <button onclick="goToSunflowerPage()">Anterior</button>
+    </div>
+
+    <script>
+        function goToFinalMessage() {
+            window.location.href = "final_message.html";
+        }
+
+        function goToSunflowerPage() {
+            window.location.href = "sunflower.html";
+        }
+    </script>
+</body>
+</html>

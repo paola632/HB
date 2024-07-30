@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girasol</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Para alinear elementos verticalmente */
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffcc; /* Fondo amarillo claro */
+            font-family: Arial, sans-serif;
+        }
+
+        .sunflower-title {
+            font-size: 3em;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra de texto para contraste */
+            margin-bottom: 20px;
+        }
+
+        .sunflower-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1; /* Para que ocupe todo el espacio disponible verticalmente */
+        }
+
+        .sunflower {
+            font-size: 22em; /* Tamaño del girasol */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra de texto para contraste */
+        }
+
+        .buttons-container {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.5em;
+            background-color: #c9dc1b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sunflower-title">
+        Mira,
+    </div>
+    <div class="sunflower-title">
+        tu regalo es un girasol
+    </div>
+    <div class="sunflower-container">
+        <div class="sunflower">
+            🌻
+        </div>
+        <div class="buttons-container">
+            <button onclick="goToMessagePage()">Continuar</button>
+            <button onclick="goToWelcomePage()">Anterior</button>
+        </div>
+    </div>
+
+    <script>
+        function goToMessagePage() {
+            window.location.href = "message.html";
+        }
+
+        function goToWelcomePage() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
